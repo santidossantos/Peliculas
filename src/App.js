@@ -2,6 +2,7 @@ import './App.css';
 import './PageWrapper.js'
 import Movie from './Movie.js'
 import PageWrapper from './PageWrapper.js';
+import Pagination from './Pagination'
 import PeliculasJSON from './peliculas.json'
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
             />
           )
         }
+
+        <Pagination />
 
       </PageWrapper>
     </div>
