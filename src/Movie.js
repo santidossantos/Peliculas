@@ -1,7 +1,7 @@
 function Movie(props) {
     return (
         <div className="movie-item-style-2">
-            <img src="images/uploads/mv1.jpg" alt="" />
+            <img src={props.img_url} alt="" />
             <div className="mv-item-infor">
                 <h6>
                     <a href="moviesingle.html">
@@ -19,3 +19,4 @@ function Movie(props) {
 }
 
 export default Movie;
+
