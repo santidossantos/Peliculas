@@ -2,14 +2,25 @@ import './App.css';
 import './PageWrapper.js'
 import Movie from './Movie.js'
 import PageWrapper from './PageWrapper.js';
+import PeliculasJSON from './peliculas.json'
 
 function App() {
+
+  let peliculas = PeliculasJSON
+
   return (
     <div className='App'>
       <PageWrapper>
-        <Movie title='Titanic' rating='9' year='2000' img_url="images/uploads/mv1.jpg" />
-        <Movie title='Titanic' rating='9' year='2000' img_url="images/uploads/mv2.jpg" />
-        <Movie title='Titanic' rating='9' year='2000' img_url="images/uploads/mv3.jpg" />
+
+        {
+          peliculas.map(pelicula =>
+            <Movie
+              title={pelicula.titulo}
+              year={pelicula.fecha}
+              img_url={pelicula.img}
+            />
+          )
+        }
 
       </PageWrapper>
     </div>
