@@ -23,7 +23,7 @@ function App() {
           )
         }
 
-        <Pagination />
+        <Pagination pagina={2} total={4} onChange={(pagina) => alert(pagina)}/>
 
       </PageWrapper>
     </div>
